@@ -1,0 +1,199 @@
+/* Start Mobile Code */
+/* V Setting my variables */
+:root{
+  --color-red:#f54017;
+  --color-lightblue:#7ee8ed;
+  --color-blue:#76dae0;
+  --color-darkblue:#5dacb0;
+  --color-cream:#ffeee1;
+}
+
+/* Setting my base mobile classes */
+.banner {
+  border-bottom: 5px solid var(--color-blue);
+  border-right: 5px solid var(--color-blue);
+  border-radius: 0 0 5px 0;
+  font-size: 1em;
+  color: var(--color-blue);
+  position: relative;
+  background-color: var(--color-darkblue);
+}
+.banner img {
+  margin-left: 1em;
+  height: 9vh;
+}
+.banner a {
+    color: var(--color-red);
+    text-decoration: none;
+    padding: 0.75em;
+ }
+.indented {
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.notMobile{
+  display: none;
+}
+/* End base classes */
+
+/* AsideImage */
+.asideImage img{
+  float: right;
+  width: 30vw;
+  max-width: 100px;
+  padding-right: .5em;
+}
+ /* Destinations Paragraphs / Images */
+ .destinations{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  padding-left: 1em;
+  padding-right: 1em;
+ }
+.destinations .mission{
+  font-family: 'Share Tech Mono', monospace;
+  background-color: var(--color-blue);
+  color: var(--color-red);
+  font-weight: bold;
+  width: fit-content;
+  padding: 3px;
+  padding-bottom: 0;
+  margin-left: 0;
+  margin-bottom: -4px;
+  border: solid 2px var(--color-lightblue);
+  border-radius: 20% 20% 0 0;
+}
+.destinations a img{
+  border: solid 2px var(--color-lightblue);
+  border-bottom: solid 2px var(--color-darkblue);
+  border-left: solid 2px var(--color-darkblue);
+  border-radius: 0 20% 5% 20%;
+  max-width: 300px;
+}
+.destinations div{
+  margin: auto;
+}
+/* End Destinations */
+
+/* Hamburger menu below here */
+  #hamburger-input {
+    visibility: hidden;
+  }
+  #hamburger-inputIcon {
+    float: right;
+    color: var(--color-red);
+    padding: .3em;
+    margin: .3em;
+    margin-top: .2em;
+    border: solid var(--color-blue);
+    border-radius: 30%;
+    overflow: auto;
+    background-color: var(--color-blue);
+  }
+  #hamburger-menu ul{
+      margin-left: 5%;
+      width: 45vw;
+  }
+  #hamburger-menu ul li {
+    list-style-type: none;
+    padding-top: 1em;
+    padding-bottom: .2em;
+    text-align: left;
+    width: 90%;
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: var(--color-darkblue);
+
+    border-left: 3px solid var(--color-red);
+    border-bottom: 3px dashed var(--color-red);
+  }
+  #hamburger-menu #sidebar-menu {
+    visibility: collapse;
+    position: absolute;
+    width: 75%;
+    right: -5px;
+    display: none;
+    background-color: var(--color-darkblue);
+  }
+  #hamburger-menu a {
+    text-decoration: none;
+  }
+  #hamburger-input:checked + #hamburger-menu #sidebar-menu{
+    visibility: visible;
+    display: grid;
+    background-color: var(--color-darkblue);
+    border: 5px solid var(--color-blue);
+    border-top: var(--color-cream);
+    border-radius: 0 0 5px 5px;
+    height: auto;
+  }
+/* End Hamburger Menu */
+
+/* Begin Base code */
+body {
+    max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  margin: auto;
+  font-size: 1em;
+}
+h2{
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.15em;
+  font-weight: bold;
+  border: 3px solid var(--color-lightblue);
+  border-bottom: 3px solid var(--color-darkblue);
+  border-left: none;
+  border-radius: 0 30px 30px 0;
+  width: fit-content;
+  padding: .2em;
+  background-color: var(--color-blue);
+  color: var(--color-red);
+}
+p{
+  text-align: left;
+  padding: 1em;
+  max-width: 550px;
+  margin: auto;
+}
+
+/* Footer Code */
+footer {
+  font-weight: bold;
+  padding: .5em;
+  display: block;
+  border-top: 5px solid var(--color-blue);
+  background-color: var(--color-darkblue);
+  font-size: 0.7em;
+  overflow: auto;
+}
+footer ul{
+  margin-top: 0;
+  margin-bottom:0;
+  padding: none;
+}
+footer li{
+  display: inline-block;
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  margin-right: .5vw;
+}
+footer a{
+  color: var(--color-red);
+}
+footer *{
+  padding: .5em;
+  margin: 0px;
+  text-decoration: none;
+}
+/* End Footer */
+/* End Base Code */
+/* End Mobile Code */
+
+/* Start Desktop Code */
+@media only screen and (min-width: 768px) {
+  
+}
