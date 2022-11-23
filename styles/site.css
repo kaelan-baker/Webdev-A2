@@ -1,5 +1,5 @@
 /* Start Mobile Code */
-/* V Setting my variables */
+/* V Setting my variables V */
 :root{
   --color-red:#f54017;
   --color-lightblue:#7ee8ed;
@@ -8,7 +8,7 @@
   --color-cream:#ffeee1;
 }
 
-/* Setting my base mobile classes */
+/* V Making my relevant mobile classes V */
 .banner {
   border-bottom: 5px solid var(--color-blue);
   border-right: 5px solid var(--color-blue);
@@ -29,6 +29,8 @@
     text-decoration: none;
     padding: 0.75em;
  }
+
+ /* Text changing classes */
 .indented {
   text-align: left;
   padding-left: 10%;
@@ -41,15 +43,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* changing what is shown for each device */
 .notMobile{
   display:none;
 }
 .notDesktop{
   display: inline;
 }
-/* End base classes */
 
-/* AsideImage */
+/* Making an image float */
 .asideImage img{
   float: right;
   width: 30vw;
@@ -57,14 +60,14 @@
   padding-right: .5em;
 }
 
- /* Destinations Paragraphs / Images */
- .destinations{
+/* Destinations div on index */
+.destinations{
   display: flex;
   flex-wrap: wrap;
   width: 90vw;
   padding-left: 1em;
   padding-right: 1em;
- }
+}
 .destinations .mission{
   font-family: 'Share Tech Mono', monospace;
   background-color: var(--color-blue);
@@ -88,7 +91,7 @@
 .destinations div{
   margin: auto;
 }
-/* End Destinations */
+/* Changing the content in trips for mobile */
 .twoColumnGrid{
   text-align: center;
 }
@@ -153,24 +156,6 @@
 #expand-toggle:checked ~ #expand-btn {
   background-color: #ccc;
 }
-/* 
-  #hamburger-menu #sidebar-menu {
-    visibility: collapse;
-    
-  }
-  #hamburger-menu a {
-    text-decoration: none;
-  }
-  #hamburger-input:checked + #hamburger-menu #sidebar-menu{
-    visibility: visible;
-    display: grid;
-    background-color: var(--color-darkblue);
-    border: 5px solid var(--color-blue);
-    border-top: var(--color-cream);
-    border-radius: 0 0 5px 5px;
-    height: auto;
-  } */
-
 
 /* Table declarations for Prices */
 .prices table{
@@ -191,6 +176,7 @@
   padding-left: .5em;
 }
 
+/* Fake error for forms */
 #noFormFound{
   width: 70vw;
   margin: auto;
@@ -202,6 +188,7 @@
   margin:auto;
   width: 50vw;
 }
+
 /* Begin Base code */
 main{
   min-height: 90vh;
@@ -237,6 +224,7 @@ span{
   color: var(--color-red);
   font-weight: bolder;
 }
+
 /* Footer Code */
 footer {
   font-weight: bold;
@@ -272,14 +260,19 @@ footer *{
 /* End Base Code */
 /* End Mobile Code */
 
+
 /* Start Desktop Code */
 @media only screen and (min-width: 768px) {
-  .notMobile{   text-align: right;
+
+  /* Turning off mobile, displaying desktop */
+  .notMobile{
+    text-align: right;
     display: block;
   }
   .notDesktop{
     display: none;
   }
+  /* Setting text styles */
   .indented{
     font-size: 1.7em;
     min-width: 18vw;
@@ -302,6 +295,8 @@ footer *{
     margin-left: auto;
     margin-right: auto;
   }
+
+  /* Making the banner and nav BIG for desktop */
   .banner{
     display: flex;
     width: 100vw;
@@ -330,7 +325,8 @@ footer *{
     background-color: var(--color-darkblue);
     border-radius: 5px 20%;
   }
-  /* Destinations */
+
+  /* Destinations paragraph on index*/
   .destinations p{
     font-size: 1.5em;
   }
@@ -344,6 +340,8 @@ footer *{
   .destinations a img:hover{
     opacity: .5;
   }
+
+  /* Floated images */
   .asideImageD img{
     float: right;
     width: 20vw;
@@ -353,6 +351,7 @@ footer *{
   .asideImage img{
     max-width: 8vw;
   }
+  /* Creating the grid for trips.html */
   .twoColumnGrid{
     margin: auto;
     display: grid;
@@ -370,6 +369,7 @@ footer *{
     width: 30vw;
   }
   
+  /* Begin Base Code  */
   main{
     min-height: 78vh;
   }
@@ -380,6 +380,7 @@ footer *{
     margin-left: auto;
     margin-right: auto;
   }
+  /* Start Footer */
   footer {
     font-weight: bold;
     display: flex;
@@ -408,4 +409,7 @@ footer *{
   footer p, footer ul{
     padding-right: 2vw;
   }
+  /* End Footer */
+  /* End Base Code */
+  /* End Mobile Code */
   }

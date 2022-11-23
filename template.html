@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VectorVenture</title>
-    <link rel="stylesheet" href="styles/site.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>TEMPLATE : VectorVenture</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" >
+    <link rel="stylesheet" href="styles/site.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com" >
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
     <link
       href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
       rel="stylesheet"
-    />
+    >
 
     <script
       src="https://kit.fontawesome.com/9caff579c5.js"
@@ -21,26 +22,26 @@
   <body>
     <header>
       <div class="banner">
-        <img src="/images/Logo.png" alt="VectorVenture Logo" />
+        <img src="./images/Logo.png" alt="VectorVenture Logo" >
 
-        <!-- Burger Menu Disabled for Desktop -->
+        <!-- Mobile Nav Burger -->
         <div class="notDesktop">
-          <input type="checkbox" id="hamburger-input" class="hamburger-show" />
-          <label id="hamburger-menu" for="hamburger-input">
-            <i id="hamburger-inputIcon" class="fa-solid fa-bars fa-2x"></i>
-
-            <div id="sidebar-menu">
-              <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li class="notMobile"><a href="moon.html">Moon</a></li>
-                <li class="notMobile"><a href="mars.html">Mars</a></li>
-                <li><a href="prices.html">Prices</a></li>
-                <li><a href="booknow.html">Book Now!</a></li>
-              </ul>
-            </div>
-          </label>
+          <label for="expand-toggle" id="expand-btn"
+            ><i id="hamburger-Icon" class="fa-solid fa-bars fa-2x"></i
+          ></label>
+          <input type="checkbox" id="expand-toggle" >
+          <div>
+            <ul class="expandable">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="trips.html">Trips</a></li>
+              <li class="notMobile"><a href="moon.html">Moon</a></li>
+              <li class="notMobile"><a href="mars.html">Mars</a></li>
+              <li><a href="prices.html">Prices</a></li>
+              <li><a href="booknow.html">Book Now!</a></li>
+            </ul>
+          </div>
         </div>
+        <!-- Desktop Nav Burger -->
         <div id="navDesktop" class="notMobile">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -53,9 +54,11 @@
         </div>
       </div>
     </header>
+    <!-- Start page Content -->
     <main>
     
-
+    </main>
+    <!-- End Page Content -->
     <footer>
       <ul>
         <li>Navigation:</li>
