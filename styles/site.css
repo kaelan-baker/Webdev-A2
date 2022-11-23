@@ -99,43 +99,65 @@ max-width: 100%;
 .twoColumnGrid ul li{
   text-align: left;
 }
-/* Hamburger menu below here */
-  #hamburger-input {
-    visibility: hidden;
-  }
-  #hamburger-inputIcon {
-    float: right;
-    color: var(--color-red);
-    padding: .3em;
-    margin: .2em;
-    border: solid var(--color-blue);
-    border-radius: 30%;
-    background-color: var(--color-blue);
-  }
-  #hamburger-menu ul{
-      margin-left: 5%;
-      width: 45vw;
-  }
-  #hamburger-menu ul li {
-    list-style-type: none;
-    padding-top: 1em;
-    padding-bottom: .2em;
-    text-align: left;
-    width: 90%;
-    font-size: 1.25em;
-    font-weight: bold;
-    background-color: var(--color-darkblue);
 
-    border-left: 3px solid var(--color-red);
-    border-bottom: 3px dashed var(--color-red);
+/* Hide the toggle checkbox */
+#expand-toggle {
+  display: none;
+}
+
+/* Hide expandable content by default */
+.expandable {
+  visibility: collapse;
+  list-style-type: none;
+  padding-bottom: .2em;
+  width: 40vw;
+  font-size: 1.25em;
+  font-weight: bold;
+  background-color: var(--color-darkblue);
+  border: 5px solid var(--color-blue);
+  border-top: 0px;
+  border-left: 0px ;
+  border-radius: 0 0 5px 0;
+  position: absolute;
+  right: -5px;
+  top: 6vh;
   }
+  .expandable ul li{
+    visibility: collapse;
+    padding: 1em;
+  }
+
+/* Style the button */
+#expand-btn {
+  float: right;
+  color: var(--color-red);
+  padding: .5em;
+  margin-right: 2vw;
+  margin-top: 1vh;
+  border: solid var(--color-blue);
+  border-radius: 30%;
+  background-color: var(--color-blue);
+}
+/* Show hidden content when the checkbox is checked */
+#expand-toggle:checked ~ * .expandable {
+  visibility: visible;
+}
+#expand-toggle:checked ~ * .expandable li {
+  visibility: visible;
+  padding: 1em;
+  padding-bottom: 0;
+  text-align: right;
+  width: 95%;
+}
+
+/* Style the button when the checkbox is checked */
+#expand-toggle:checked ~ #expand-btn {
+  background-color: #ccc;
+}
+/* 
   #hamburger-menu #sidebar-menu {
     visibility: collapse;
-    position: absolute;
-    width: 75%;
-    right: -5px;
-    display: none;
-    background-color: var(--color-darkblue);
+    
   }
   #hamburger-menu a {
     text-decoration: none;
@@ -148,8 +170,8 @@ max-width: 100%;
     border-top: var(--color-cream);
     border-radius: 0 0 5px 5px;
     height: auto;
-  }
-/* End Hamburger Menu */
+  } */
+
 
 /* Table declarations for Prices */
 .prices table{

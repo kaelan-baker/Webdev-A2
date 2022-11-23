@@ -25,12 +25,10 @@
 
         <!-- Burger Menu Disabled for Desktop -->
         <div class="notDesktop">
-          <input type="checkbox" id="hamburger-input" class="hamburger-show" />
-          <label id="hamburger-menu" for="hamburger-input">
-            <i id="hamburger-inputIcon" class="fa-solid fa-bars fa-2x"></i>
-
-            <div id="sidebar-menu">
-              <ul>
+          <label for="expand-toggle" id="expand-btn"><i id="hamburger-Icon" class="fa-solid fa-bars fa-2x"></i></label>
+          <input type="checkbox" id="expand-toggle" />
+            <div>
+              <ul class="expandable">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li class="notMobile"><a href="moon.html">Moon</a></li>
