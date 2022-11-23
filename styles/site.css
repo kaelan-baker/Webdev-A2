@@ -16,6 +16,8 @@
   font-size: 1em;
   color: var(--color-blue);
   position: relative;
+max-width: 100%;
+  height: 10vh;
   background-color: var(--color-darkblue);
 }
 .banner img {
@@ -105,8 +107,7 @@
     float: right;
     color: var(--color-red);
     padding: .3em;
-    margin: .3em;
-    margin-top: 1vh;
+    margin: .2em;
     border: solid var(--color-blue);
     border-radius: 30%;
     background-color: var(--color-blue);
@@ -171,22 +172,20 @@
 
 #noFormFound{
   width: 70vw;
-  height: 20vw;
   margin: auto;
-  padding-top: 10vh;
+  padding-top: 1em;
   border: 10px solid var(--color-red);
 }
 #noFormFound h1, #noFormFound p{
   text-align: center;
   margin:auto;
-  width: 40vw;
+  width: 50vw;
 }
 /* Begin Base code */
 main{
   min-height: 100vh;
 }
 body {
-    max-width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-cream);
   margin: auto;
@@ -212,6 +211,11 @@ p{
   max-width: 550px;
   margin: auto;
 }
+span{
+  background-color: black;
+  color: var(--color-red);
+  font-weight: bolder;
+}
 /* Footer Code */
 footer {
   font-weight: bold;
@@ -225,7 +229,7 @@ footer {
 footer ul{
   margin-top: 0;
   margin-bottom:0;
-  padding: none;
+  padding: 0;
 }
 footer li{
   display: inline-block;
@@ -273,7 +277,6 @@ footer *{
   }
   .centeredp{
     padding-left: 10vw;
-    padding-right: auto;
     width: 100vw;
     margin-left: auto;
     margin-right: auto;
@@ -281,6 +284,7 @@ footer *{
   .banner{
     display: flex;
     width: 100vw;
+    height: 15vh;
     background-color: var(--color-blue);
     border: 0;
   }
@@ -340,7 +344,6 @@ footer *{
     width: 30vw;
   }
   .twoColumnGrid #mars{
-    margin: left;
     grid-row: 1;
     grid-column: 2;
     width: 30vw;
@@ -362,6 +365,12 @@ footer *{
     border-top: 5px solid var(--color-blue);
     background-color: var(--color-darkblue);
     font-size: .80vw;
+  }
+  footer a{
+    padding:1em;
+  }
+  footer a:hover{
+    background-color: var(--color-blue);
   }
   footer ul{
     padding: 0;
