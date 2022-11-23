@@ -54,6 +54,8 @@
   max-width: 100px;
   padding-right: .5em;
 }
+
+
  /* Destinations Paragraphs / Images */
  .destinations{
   display: flex;
@@ -148,13 +150,48 @@
   }
 /* End Hamburger Menu */
 
+/* Table declarations for Prices */
+.prices table{
+  
+  margin-left: 15vw;
+}
+.prices table, .prices th, .prices td{
+  background-color: var(--color-blue);
+  color: var(--color-red);
+  font-weight: bolder;
+  border-collapse: collapse;
+  border: 3px solid var(--color-darkblue);
+  padding: 1em;
+  text-align: left;
+}
+.prices th{
+  color: black;
+  padding-left: .5em;
+}
+
+#noFormFound{
+  width: 70vw;
+  height: 20vw;
+  margin: auto;
+  padding-top: 10vh;
+  border: 10px solid var(--color-red);
+}
+#noFormFound h1, #noFormFound p{
+  text-align: center;
+  margin:auto;
+  width: 40vw;
+}
 /* Begin Base code */
+main{
+  min-height: 100vh;
+}
 body {
     max-width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-cream);
   margin: auto;
   font-size: 1em;
+  min-height: 100vh;
 }
 h2{
   font-family: 'Share Tech Mono', monospace;
@@ -175,7 +212,6 @@ p{
   max-width: 550px;
   margin: auto;
 }
-
 /* Footer Code */
 footer {
   font-weight: bold;
@@ -230,6 +266,18 @@ footer *{
     background-color: var(--color-cream);
     border: 0px none;
   }
+  #floatText{
+    margin-left: 15vw;
+    float:left;
+    width: 30vw;
+  }
+  .centeredp{
+    padding-left: 10vw;
+    padding-right: auto;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .banner{
     display: flex;
     width: 100vw;
@@ -257,7 +305,6 @@ footer *{
     background-color: var(--color-darkblue);
     border-radius: 5px 20%;
   }
-
   /* Destinations */
   .destinations p{
     font-size: 1.5em;
@@ -272,7 +319,12 @@ footer *{
   .destinations a img:hover{
     opacity: .5;
   }
-
+  .asideImageD img{
+    float: right;
+    width: 20vw;
+    padding: 1em;
+    margin-right: 5vw;
+  }
   .asideImage img{
     max-width: 8vw;
   }
@@ -281,7 +333,6 @@ footer *{
     display: grid;
     grid-template-columns: auto auto;
   }
-
   .twoColumnGrid #moon{
     margin: auto;
     grid-row: 1;
@@ -293,18 +344,18 @@ footer *{
     grid-row: 1;
     grid-column: 2;
     width: 30vw;
-
   }
-
+  
+  main{
+    min-height: 100vh;
+  }
   p{
     text-align: justify;
     padding: 1em;
     max-width: 70vw;
     margin-left: auto;
     margin-right: auto;
-    
   }
-
   footer {
     font-weight: bold;
     display: flex;
@@ -314,9 +365,6 @@ footer *{
   }
   footer ul{
     padding: 0;
-  }
-  footer ul li{
-
   }
   footer .notMobile{
     display: inline-block;
@@ -329,6 +377,4 @@ footer *{
   footer p, footer ul{
     padding-right: 2vw;
   }
-  
-
   }

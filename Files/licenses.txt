@@ -2,4 +2,5 @@ This file is for storing the image licenses used for this assignment so I can cr
 
 "Moon" by indigoorange is licensed under CC BY-NC-SA 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/2.0/?ref=openverse.
 "Mars" by Kevin M. Gill is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
-https://pixabay.com/photos/astronomy-bright-constellation-dark-1867616/
+"Chevrolet Corvette 1960" by zigazou76 is licensed under CC BY 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by/2.0/?ref=openverse.
+"Bubble dome" by babageik is licensed under CC BY-NC-ND 2.0. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=openverse.
